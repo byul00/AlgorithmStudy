@@ -15,13 +15,13 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="진수변환.c">
+    <ClCompile Include="linear1.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="structual_1.c">
+    <ClCompile Include="linear2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="structual_2.c">
+    <ClCompile Include="bin_search.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

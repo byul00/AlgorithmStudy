@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{fae5375e-e7b9-4217-8672-88cd6f14d609}</ProjectGuid>
-    <RootNamespace>ch02</RootNamespace>
+    <ProjectGuid>{0eeeae99-0f6e-4ed3-85ae-8a2c520136f3}</ProjectGuid>
+    <RootNamespace>ch03</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,9 +139,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="structual_1.c" />
-    <ClCompile Include="structual_2.c" />
-    <ClCompile Include="진수변환.c" />
+    <ClCompile Include="bin_search.c" />
+    <ClCompile Include="linear1.c" />
+    <ClCompile Include="linear2.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
