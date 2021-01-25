@@ -1,48 +1,59 @@
-#include <stdio.h>
-#include "IntStack.h"
-
-int main(void)
-{
-	IntStack s;
-	if (Initialize(&s, 64) == -1) {
-		puts("스택 생성에 실패하였습니다.");
-		return 1;
-	}
-
-	while (1) {
-		int menu, x;
-		printf("현재 데이터 수 : %d / %d\n", Size(&s), Capacity(&s));
-		printf("(1)푸시 (2)팝 (3)피크 (4)출력 (0)종료 : ");
-		scanf_s("%d", &menu);
-
-		if (menu == 0) break;
-		switch (menu) {
-		case 1:		//푸시
-			printf("데이터 : ");
-			scanf_s("%d", &x);
-			if (Push(&s, x) == -1)
-				puts("\a오류 : 푸시에 실패했습니다.");	//\a : 경고음
-			break;
-
-		case 2:		//팝
-			if (Pop(&s, &x) == -1)
-				puts("\a오류 : 팝에 실패했습니다.");
-			else
-				printf("팝 데이터는 %d 입니다. \n", x);
-			break;
-
-		case 3:	//피크
-			if (Peek(&s, &x) == -1)
-				puts("\a오류 : 피크에 실패했습니다.");
-			else
-				printf("피크 데이터는 %d 입니다. \n", x);
-			break;
-
-		case 4:	//출력
-			Print(&s);
-			break;
-		}
-	}
-	Terminate(&s);
-	return 0;	
-}
+////스택 사용 예제 프로그램
+//#include <stdio.h>
+//#include "IntStack.h"
+//
+//int main(void)
+//{
+//	IntStack s;
+//	if (Initialize(&s, 64) == -1) {
+//		puts("스택 생성에 실패하였습니다.");
+//		return 1;
+//	}
+//
+//	while (1) {
+//		int menu, x, sn;
+//		printf("현재 데이터 수 : %d / %d\n", Size(&s), Capacity(&s));
+//		printf("(1)푸시 (2)팝 (3)피크 (4)출력 (5)검색 (6)클리어 (0)종료 : ");
+//		scanf_s("%d", &menu);	
+//
+//		if (menu == 0) break;
+//		switch (menu) {
+//		case 1:		//푸시
+//			printf("데이터 : ");
+//			scanf_s("%d", &x);
+//			if (Push(&s, x) == -1)
+//				puts("\a오류 : 푸시에 실패했습니다.");	//\a : 경고음
+//			break;
+//
+//		case 2:		//팝
+//			if (Pop(&s, &x) == -1)
+//				puts("\a오류 : 팝에 실패했습니다.");
+//			else
+//				printf("팝 데이터는 %d 입니다. \n", x);
+//			break;
+//
+//		case 3:	//피크
+//			if (Peek(&s, &x) == -1)
+//				puts("\a오류 : 피크에 실패했습니다.");
+//			else
+//				printf("피크 데이터는 %d 입니다. \n", x);
+//			break;
+//
+//		case 4:	//출력
+//			Print(&s);
+//			break;
+//			
+//		case 5:		//검색
+//			printf("검색할 데이터 : ");
+//			scanf_s("%d", &sn);
+//			x = Search(&s, sn);
+//			if (x == -1)
+//				puts("데이터가 존재하지 않습니다.");
+//			else
+//				printf("데이터는 %d번째 인덱스에 존재합니다.\n", x);
+//			break;
+//		}
+//	}
+//	Terminate(&s);
+//	return 0;	
+//}
