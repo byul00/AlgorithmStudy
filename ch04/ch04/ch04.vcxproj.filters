@@ -15,20 +15,16 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="linear1.c">
+    <ClCompile Include="IntStack.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="linear2.c">
+    <ClCompile Include="IntStackTest.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="bin_search.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="03_Q2.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="03_Q1.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="IntStack.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
